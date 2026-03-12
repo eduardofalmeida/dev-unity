@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { UserPlus, Users, Lightbulb, CloudCog, ArrowRight } from "lucide-react";
+import { UserPlus, Users, Lightbulb, CloudCog } from "lucide-react";
 
 const services = [
   {
@@ -108,17 +108,6 @@ function ServiceCard({ service, index }: { service: (typeof services)[0]; index:
             </span>
           ))}
         </div>
-
-        {/* CTA link */}
-        <button
-          className="flex items-center gap-1.5 text-xs font-semibold tracking-wide uppercase transition-all duration-200 group/cta"
-          style={{ color: `${service.color}80` }}
-        >
-          <span className="group-hover/cta:text-white transition-colors duration-200" style={{ color: service.color }}>
-            Saiba mais
-          </span>
-          <ArrowRight size={12} className="group-hover/cta:translate-x-1 transition-transform duration-200" style={{ color: service.color }} />
-        </button>
       </div>
     </motion.div>
   );

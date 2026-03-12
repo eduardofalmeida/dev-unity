@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { ArrowRight, Calendar, ChevronDown, Sparkles } from "lucide-react";
 
@@ -102,58 +102,6 @@ const HEADLINE_WORDS = [
 ];
 
 const ACCENT_WORDS = new Set(["alto", "nível."]);
-
-/* ── Stats counter ────────────────────────────────────────── */
-const stats = [
-  { value: 200, suffix: "+", label: "Especialistas" },
-  { value: 50, suffix: "+", label: "Empresas" },
-  { value: 98, suffix: "%", label: "Satisfação" },
-  { value: 48, suffix: "h", label: "Tempo de início" },
-];
-
-function AnimatedStat({ value, suffix, label, delay }: { value: number; suffix: string; label: string; delay: number }) {
-  const [count, setCount] = useState(0);
-  const [started, setStarted] = useState(false);
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const obs = new IntersectionObserver(
-      ([e]) => { if (e.isIntersecting && !started) setStarted(true); },
-      { threshold: 0.5 }
-    );
-    if (ref.current) obs.observe(ref.current);
-    return () => obs.disconnect();
-  }, [started]);
-
-  useEffect(() => {
-    if (!started) return;
-    const timeout = setTimeout(() => {
-      let start = 0;
-      const duration = 1200;
-      const step = (timestamp: number) => {
-        if (!start) start = timestamp;
-        const progress = Math.min((timestamp - start) / duration, 1);
-        const eased = 1 - Math.pow(1 - progress, 3);
-        setCount(Math.floor(eased * value));
-        if (progress < 1) requestAnimationFrame(step);
-        else setCount(value);
-      };
-      requestAnimationFrame(step);
-    }, delay);
-    return () => clearTimeout(timeout);
-  }, [started, value, delay]);
-
-  return (
-    <div ref={ref} className="flex flex-col items-start">
-      <span className="text-3xl lg:text-4xl font-black text-white tracking-tight tabular-nums">
-        {count}{suffix}
-      </span>
-      <span className="text-slate-500 text-xs font-medium mt-0.5 tracking-wide uppercase">
-        {label}
-      </span>
-    </div>
-  );
-}
 
 /* ── Main Hero ────────────────────────────────────────────── */
 export default function Hero() {
@@ -277,17 +225,6 @@ export default function Hero() {
             </a>
           </motion.div>
 
-          {/* Stats row */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1.3 }}
-            className="flex flex-wrap gap-10 pt-10 border-t border-white/[0.06]"
-          >
-            {stats.map((s, i) => (
-              <AnimatedStat key={s.label} {...s} delay={i * 150} />
-            ))}
-          </motion.div>
         </div>
       </div>
 
