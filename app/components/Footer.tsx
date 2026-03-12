@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Zap, Mail, Linkedin, Phone, ArrowRight } from "lucide-react";
+import { Mail, Linkedin, Phone, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const footerLinks = {
   Serviços: [
@@ -40,11 +41,8 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <a href="#" className="flex items-center gap-2.5 mb-5 group w-fit">
-              <div className="relative w-8 h-8">
-                <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-[#2563EB] to-[#22C55E] opacity-20 blur-md group-hover:opacity-40 transition-opacity duration-300" />
-                <div className="relative w-8 h-8 rounded-lg bg-gradient-to-br from-[#2563EB] to-[#22C55E] flex items-center justify-center">
-                  <Zap size={15} className="text-white" fill="white" />
-                </div>
+              <div className="relative w-9 h-9 group-hover:scale-105 transition-transform duration-300">
+                <Image src="/logo.png" alt="Codity Tecnologia" width={36} height={36} className="object-contain" />
               </div>
               <span className="text-white font-bold text-lg tracking-tight">
                 Codity<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#60a5fa] to-[#34d399]"> Tecnologia</span>

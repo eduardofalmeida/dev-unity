@@ -25,12 +25,6 @@ const pillars = [
   },
 ];
 
-const statsRow = [
-  { value: "5+", label: "Anos de mercado" },
-  { value: "200+", label: "Especialistas alocados" },
-  { value: "50+", label: "Empresas parceiras" },
-  { value: "15+", label: "Países atendidos" },
-];
 
 export default function About() {
   const ref = useRef(null);
@@ -151,29 +145,6 @@ export default function About() {
           </div>
         </div>
 
-        {/* Stats bar */}
-        <motion.div
-          initial={{ opacity: 0, y: 24 }}
-          animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7, delay: 0.5 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4"
-        >
-          {statsRow.map((stat) => (
-            <div
-              key={stat.label}
-              className="text-center rounded-2xl py-7 px-4"
-              style={{
-                background: "rgba(255,255,255,0.025)",
-                border: "1px solid rgba(255,255,255,0.07)",
-              }}
-            >
-              <div className="text-3xl md:text-4xl font-black text-white tracking-tight mb-1">
-                {stat.value}
-              </div>
-              <div className="text-slate-500 text-xs tracking-wide">{stat.label}</div>
-            </div>
-          ))}
-        </motion.div>
       </div>
     </section>
   );

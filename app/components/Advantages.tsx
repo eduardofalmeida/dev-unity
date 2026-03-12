@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Star, Zap, Building2, GitBranch, Award, ShieldCheck } from "lucide-react";
+import { Star, Zap, Building2, GitBranch, ShieldCheck } from "lucide-react";
 
 /* Bento grid items */
 const bentoItems = [
@@ -41,15 +41,6 @@ const bentoItems = [
     color: "#fbbf24",
     colSpan: "lg:col-span-1",
     featured: false,
-  },
-  {
-    icon: Award,
-    title: "Profissionais Experientes",
-    description: "7+ anos de experiência média em projetos complexos de empresas líderes.",
-    stat: "7+ anos",
-    color: "#f87171",
-    colSpan: "lg:col-span-2",
-    featured: true,
   },
   {
     icon: ShieldCheck,
