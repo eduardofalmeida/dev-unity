@@ -141,7 +141,7 @@ export default function Advantages() {
         >
           <span className="inline-flex items-center gap-2 text-[#34d399] font-medium text-xs tracking-widest uppercase mb-4">
             <span className="w-6 h-px bg-[#34d399]" />
-            Por que DevUnity
+            Por que Codity
           </span>
           <h2 className="text-[clamp(2rem,4vw,3.5rem)] font-black text-white leading-[1.06] tracking-tight mb-4">
             A diferença está na{" "}

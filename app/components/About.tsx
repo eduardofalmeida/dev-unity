@@ -67,7 +67,7 @@ export default function About() {
           >
             <span className="inline-flex items-center gap-2 text-[#a78bfa] font-medium text-xs tracking-widest uppercase mb-4">
               <span className="w-6 h-px bg-[#a78bfa]" />
-              Sobre a DevUnity
+              Sobre a Codity
             </span>
             <h2 className="text-[clamp(2rem,4vw,3.5rem)] font-black text-white leading-[1.06] tracking-tight mb-6">
               Construindo o futuro{" "}
@@ -78,7 +78,7 @@ export default function About() {
 
             <div className="space-y-5 mb-8">
               {[
-                "A DevUnity nasceu com a missão de conectar empresas a talentos de engenharia de software de alto nível.",
+                "A Codity nasceu com a missão de conectar empresas a talentos de engenharia de software de alto nível.",
                 "Acreditamos que grandes soluções tecnológicas são construídas por equipes fortes, arquitetura moderna e inovação contínua.",
                 "Nosso objetivo é ajudar empresas a acelerar sua transformação digital com as pessoas certas e a tecnologia certa.",
               ].map((paragraph, i) => (
@@ -102,7 +102,7 @@ export default function About() {
               className="border-l-2 border-[#a78bfa]/50 pl-5 mb-8"
             >
               <p className="text-slate-200 font-medium text-lg italic leading-snug">
-                "DevUnity — Talentos de engenharia unidos à sua visão."
+                "Codity Tecnologia — Talentos de engenharia unidos à sua visão."
               </p>
             </motion.div>
 

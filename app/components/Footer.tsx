@@ -11,15 +11,15 @@ const footerLinks = {
     { label: "Cloud & Plataforma", href: "#services" },
   ],
   Empresa: [
-    { label: "Sobre a DevUnity", href: "#about" },
+    { label: "Sobre a Codity", href: "#about" },
     { label: "Como Funciona", href: "#process" },
     { label: "Especialistas", href: "#specialists" },
     { label: "Tecnologias", href: "#technologies" },
   ],
   Contato: [
-    { label: "contato@devunity.com.br", href: "mailto:contato@devunity.com.br", icon: Mail },
+    { label: "contato@codity.com.br", href: "mailto:contato@codity.com.br", icon: Mail },
     { label: "+55 (11) 9 9999-9999", href: "tel:+5511999999999", icon: Phone },
-    { label: "LinkedIn", href: "https://linkedin.com/company/devunity", icon: Linkedin },
+    { label: "LinkedIn", href: "https://linkedin.com/company/codity", icon: Linkedin },
   ],
 };
 
@@ -47,7 +47,7 @@ export default function Footer() {
                 </div>
               </div>
               <span className="text-white font-bold text-lg tracking-tight">
-                Dev<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#60a5fa] to-[#34d399]">Unity</span>
+                Codity<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#60a5fa] to-[#34d399]"> Tecnologia</span>
               </span>
             </a>
 
@@ -119,7 +119,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="py-5 border-t border-white/[0.04] flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-slate-600 text-xs">
-            © {new Date().getFullYear()} DevUnity Tecnologia Ltda. Todos os direitos reservados.
+            © {new Date().getFullYear()} Codity Tecnologia Ltda. Todos os direitos reservados.
           </p>
           <div className="flex gap-5">
             {["Política de Privacidade", "Termos de Uso", "LGPD"].map((item) => (

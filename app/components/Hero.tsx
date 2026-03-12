@@ -242,7 +242,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.9 }}
             className="text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed mb-10 font-light"
           >
-            A DevUnity conecta empresas a{" "}
+            A Codity conecta empresas a{" "}
             <span className="text-slate-200 font-medium">engenheiros experientes</span>{" "}
             prontos para acelerar projetos de tecnologia.
           </motion.p>

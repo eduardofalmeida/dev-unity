@@ -91,7 +91,7 @@ export default function CTA() {
               transition={{ duration: 0.6, delay: 0.42 }}
               className="text-slate-400 text-lg leading-relaxed max-w-xl mx-auto mb-10 font-light"
             >
-              Converse com nossos especialistas e descubra como a DevUnity pode
+              Converse com nossos especialistas e descubra como a Codity pode
               acelerar seus projetos com os melhores talentos de engenharia.
             </motion.p>
 
@@ -103,7 +103,7 @@ export default function CTA() {
               className="flex flex-col sm:flex-row gap-3 justify-center mb-10"
             >
               <a
-                href="mailto:contato@devunity.com.br"
+                href="mailto:contato@codity.com.br"
                 className="group relative overflow-hidden inline-flex items-center justify-center gap-2.5 text-white font-semibold text-sm px-8 py-4 rounded-xl transition-all duration-200 hover:-translate-y-0.5"
                 style={{ background: "linear-gradient(135deg, #2563EB, #1d4ed8)", boxShadow: "0 4px 24px rgba(37,99,235,0.35)" }}
               >

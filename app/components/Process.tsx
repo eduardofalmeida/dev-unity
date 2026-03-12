@@ -67,7 +67,7 @@ export default function Process() {
             Nosso Processo
           </span>
           <h2 className="text-[clamp(2rem,4vw,3.5rem)] font-black text-white leading-[1.06] tracking-tight mb-4">
-            Como a DevUnity{" "}
+            Como a Codity{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#a78bfa] to-[#60a5fa]">
               funciona
             </span>

@@ -53,7 +53,7 @@ export default function Navbar() {
                 </div>
               </div>
               <span className="text-white font-bold text-lg tracking-tight">
-                Dev<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#60a5fa] to-[#34d399]">Unity</span>
+                Codity<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#60a5fa] to-[#34d399]"> Tecnologia</span>
               </span>
             </a>
 

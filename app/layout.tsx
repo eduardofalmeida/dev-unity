@@ -10,9 +10,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "DevUnity — Talentos de Engenharia Unidos à Sua Visão",
+  title: "Codity Tecnologia — Talentos de Engenharia Unidos à Sua Visão",
   description:
-    "A DevUnity conecta empresas a desenvolvedores altamente qualificados prontos para acelerar seus projetos de tecnologia. Staff augmentation, times dedicados e consultoria em engenharia de software.",
+    "A Codity Tecnologia conecta empresas a desenvolvedores altamente qualificados prontos para acelerar seus projetos de tecnologia. Staff augmentation, times dedicados e consultoria em engenharia de software.",
   keywords: [
     "outsourcing de desenvolvedores",
     "staff augmentation",
@@ -20,20 +20,20 @@ export const metadata: Metadata = {
     "alocação de desenvolvedores",
     "times dedicados",
     "engenharia de software",
-    "DevUnity",
+    "Codity Tecnologia",
   ],
-  authors: [{ name: "DevUnity" }],
+  authors: [{ name: "Codity Tecnologia" }],
   openGraph: {
-    title: "DevUnity — Talentos de Engenharia Unidos à Sua Visão",
+    title: "Codity Tecnologia — Talentos de Engenharia Unidos à Sua Visão",
     description:
       "Conectamos empresas a desenvolvedores altamente qualificados para acelerar sua transformação digital.",
     type: "website",
     locale: "pt_BR",
-    siteName: "DevUnity",
+    siteName: "Codity Tecnologia",
   },
   twitter: {
     card: "summary_large_image",
-    title: "DevUnity — Talentos de Engenharia Unidos à Sua Visão",
+    title: "Codity Tecnologia — Talentos de Engenharia Unidos à Sua Visão",
     description:
       "Conectamos empresas a desenvolvedores altamente qualificados para acelerar sua transformação digital.",
   },
